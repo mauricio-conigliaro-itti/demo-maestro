@@ -1,0 +1,14 @@
+appId: com.android.chrome
+---
+- launchApp
+- runScript: page-login.js
+- tapOn: "Search or type URL"
+- inputText: "saucedemo.com"
+- tapOn:
+    text: saucedemo.com
+    index: 1
+- tapOn: "Username"
+- inputText: ${output.saucelogin.username}
+- tapOn: "password"
+- inputText: ${output.saucelogin.password}
+- tapOn: "Login"

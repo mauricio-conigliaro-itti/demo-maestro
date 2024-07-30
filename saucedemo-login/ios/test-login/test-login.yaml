@@ -1,0 +1,15 @@
+appId: com.apple.mobilesafari
+---
+- launchApp
+- runScript: page-login.js
+- tapOn:
+    point: "50%,89%"
+- inputText: "saucedemo.com"
+- tapOn:
+    id: "Go"
+- tapOn: "Username"
+- inputText: ${output.saucelogin.username}
+- tapOn: "Password"
+- inputText: ${output.saucelogin.password}
+- tapOn: "Login"
+- assertVisible: Sauce Labs Backpack

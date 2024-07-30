@@ -1,0 +1,21 @@
+appId: com.apple.mobilesafari
+tags:
+  - work-in-progress
+---
+- repeat:
+    while:
+      notVisible: "Test.allTheThings() T-Shirt (Red)"
+    commands:
+      - scrollUntilVisible:
+          element: "Add to Cart" # or any other selector
+          direction: DOWN
+          speed: 60
+          timeout: 50000
+      - tapOn: "Add to Cart"
+- scrollUntilVisible:
+    element: "Open Menu"
+    direction: UP
+    timeout: 50000
+    speed: 70
+- tapOn:
+    point: 94%,10%

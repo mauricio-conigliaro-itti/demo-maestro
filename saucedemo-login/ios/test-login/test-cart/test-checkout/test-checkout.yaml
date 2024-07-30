@@ -1,0 +1,23 @@
+appId: com.apple.mobilesafari
+tags:
+  - work-in-progress
+---
+- scrollUntilVisible:
+    element: "7.99"
+    direction: DOWN
+    timeout: 10000
+    speed: 80
+- tapOn: "Checkout"
+- tapOn: "First Name"
+- inputText: "Juan"
+- tapOn: "Last Name"
+- inputText: "Perez"
+- tapOn: "Zip/Postal Code"
+- inputText: "12345"
+- tapOn: "Continue"
+- scrollUntilVisible:
+    element: "123.07"
+    direction: DOWN
+    timeout: 50000
+    speed: 80
+- tapOn: "Finish"

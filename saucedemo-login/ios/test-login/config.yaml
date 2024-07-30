@@ -1,0 +1,10 @@
+# config.yaml
+executionOrder:
+  continueOnFailure: false # default is true
+  flowsOrder:
+    - test-login
+    - test-cart
+    - test-checkout
+
+flows:
+  - "**"

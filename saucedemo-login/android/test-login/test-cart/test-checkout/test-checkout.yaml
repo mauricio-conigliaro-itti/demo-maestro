@@ -1,0 +1,23 @@
+appId: com.android.chrome
+tags:
+  - work-in-progress
+---
+- scrollUntilVisible:
+    element: "Checkout"
+    direction: DOWN
+    timeout: 50000
+    speed: 80
+- tapOn: "Checkout"
+- tapOn: "First Name"
+- inputText: "Juan"
+- tapOn: "Last Name"
+- inputText: "Perez"
+- tapOn: "Zip/Postal Code"
+- inputText: "12345"
+- tapOn: "Continue"
+- scrollUntilVisible:
+    element: "Finish"
+    direction: DOWN
+    timeout: 50000
+    speed: 80
+- tapOn: "Finish"
